@@ -18,7 +18,7 @@ function check() {
         function validRegister() {
             if (emailRegOpen == 'usuario@teste.com.br' && senhaRegOpen == 'senha123') {
                 alertify.success('Successfully registered.');
-                setTimeout(function() { register() }, 2500);
+                setTimeout(function() { register() }, 2000);
             } else {
                 alertify.error('The chosen Email or Password is not correct.');
             }

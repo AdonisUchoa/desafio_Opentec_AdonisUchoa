@@ -12,7 +12,8 @@ function check() {
         function verifiEmail(event) {
             if (emailOpen == 'usuario@teste.com.br' && senhaOpen === 'senha123') {
                 alertify.success('Olá, usuario@teste.com.br! Seja bem vindo.');
-
+                setTimeout(function() { window.open('../HomePage.html') }, 1000);
+                
             } else {
                 alertify.error('Email or Password is not correct');
             }
