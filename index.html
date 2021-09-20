@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" type="text/css" href="./src/Styles/Global.css" />
+        <link rel="stylesheet" type="text/css" href="./src/Styles/Reset.css" />
+        <link rel="stylesheet" type="text/css" href="./src/Styles/Login.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.rtl.min.css" />
+        <title>Login</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row px-3">
+                <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
+                    <div class="title-body">
+                        <h4 class="title mt-4"><span class="span-title">Lo</span>gin</h4>
+                        <form class="form-global px-3" method="GET">
+                            <div class="form-input">
+                                <span><i class="fa fa-envelope"></i></span>
+                                <input id="email" class="input-text" type="email" name="" placeholder="Enter your email" tabindex="10" required />
+                            </div>
+                            <div class="form-input">
+                                <span><i class="fa fa-lock"></i></span>
+                                <input id="password" class="input-text" type="password" name="" placeholder="Enter your password" />
+                            </div>
+                             <div class="mb-3">
+                                <button type="submit" class="btn btn-block">
+                                    Submit
+                                </button>
+                            </div>
+                            <div class="text-center mb-2">
+                                <span class="register-text">Don't have an account?</span>
+                                <a href="register.html" class="register-link">
+                                    Signup now
+                                </a>
+                            </div> 
+                        </form>
+                    </div>
+                    <div class="img-right d-none d-md-flex">
+                        <p id="p1">Every new friend is a new adventure</p>
+                        <p id="p2">Let's get connected</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="./src/Controller/Register.js"></script>
+    <script src="./src/Controller/Login.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+</html>

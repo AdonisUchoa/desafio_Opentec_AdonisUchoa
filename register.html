@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" type="text/css" href="./src/Styles/Global.css" />
+      <link rel="stylesheet" type="text/css" href="./src/Styles/Register.css">
+      <link rel="stylesheet" type="text/css" href="./src/Styles/Reset.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/css/alertify.rtl.min.css">
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+      <!-- Get your production ready CDN links bellow. You can also automate your upgrades by pulling the latest versions from our API-->
+      <!-- AlertifyJS is a javascript framework for developing pretty browser dialogs and notifications-->
+   </head>
+   <title>Register</title>
+   <body>
+      <div class="container">
+         <div class="row px-3">
+            <div class="col-lg-10 col-xl-9 card flex-row mx-auto px-0">
+               <div class="img-right d-none d-md-flex">
+                  <p id="p1">Join our community!</p>
+                  <p id="p2">Let's get connected</p>
+               </div>
+               <div class="title-body">
+                  <h4 class="title mt-4">
+                     <span class="span-title">Re</span>gister
+                  </h4>
+                  <form class="form-global px-3">
+                     <div class="form-input">
+                        <span><i class="fa fa-user"></i></span>
+                        <input class="input-text"
+                           type="text" name="" 
+                           placeholder="Enter your name" 
+                           tabindex="10" required>
+                     </div>
+                     <div class="form-input">
+                        <span><i class="fa fa-envelope"></i></span>
+                        <input id="idEmail-reg"-reg" class="input-text" type="email" name="" placeholder="Enter your email" tabindex="10" required>
+                     </div>
+                     <div class="form-input">
+                        <span><i class="fa fa-lock"></i></span>
+                        <input id="idPassword-reg" class="input-text" type="password" name="" placeholder="Enter your password" required>
+                     </div>
+                     <div class="mb-3">
+                        <button onclick="register()" type="submit" class="btn btn-block">
+                        Submit
+                        </button>
+                        <span class="text-center mb-2 top-1">Already have an account?</span>
+                        <a href="index.html" class="register-link" >
+                        Sign in
+                        </a>
+                     </div>
+                  </form>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/AlertifyJS/1.13.1/alertify.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+   <script src="./src/Controller/Register.js"></script>
+</html>
