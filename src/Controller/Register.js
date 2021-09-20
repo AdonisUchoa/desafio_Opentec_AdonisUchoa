@@ -22,7 +22,7 @@ function checkReg() {
             // localStorage.setItem('name', nameRegOpen);
         }
         function validRegister() {
-            if (emailRegOpen,senhaRegOpen ) {
+            if (emailRegOpen,senhaRegOpen) {
                 alertify.success('Successfully registered.');
                 store();
                 setTimeout(function() { register(); }, 2000);
